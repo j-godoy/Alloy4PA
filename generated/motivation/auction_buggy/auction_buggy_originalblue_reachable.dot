@@ -1,0 +1,6 @@
+digraph {
+
+S00->S06 [label="constructor", style="", color="blue"]
+S00->S09 [label="constructor", style="", color="blue"]
+S06->S06 [label="t", style="", color="blue"]
+}

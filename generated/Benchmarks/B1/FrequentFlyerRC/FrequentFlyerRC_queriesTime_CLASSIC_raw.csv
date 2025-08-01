@@ -1,0 +1,8 @@
+Transition, Time (secs), Satisfiable
+transition__S01__a__S01__mediante_met_addMiles,0.056,false
+transition__S02__a__S01__mediante_met_addMiles,0.057,false
+transition__S00__a__S01__mediante_met_constructor,0.066,true
+transition__S00__a__S02__mediante_met_constructor,0.024,false
+transition__S01__a__S02__mediante_met_addMiles,0.044,true
+transition__S02__a__S02__mediante_met_addMiles,0.049,true
+

@@ -1,0 +1,8 @@
+S01 [label="choicePlayer1 & choicePlayer2\n & determineWinner"]
+S02 [label="!choicePlayer1 & choicePlayer2\n & determineWinner"]
+S03 [label="choicePlayer1 & !choicePlayer2\n & determineWinner"]
+S04 [label="choicePlayer1 & choicePlayer2\n & !determineWinner"]
+S05 [label="!choicePlayer1 & !choicePlayer2\n & determineWinner"]
+S06 [label="!choicePlayer1 & choicePlayer2\n & !determineWinner"]
+S07 [label="choicePlayer1 & !choicePlayer2\n & !determineWinner"]
+S08 [label="!choicePlayer1 & !choicePlayer2\n & !determineWinner"]

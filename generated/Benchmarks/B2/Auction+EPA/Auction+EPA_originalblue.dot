@@ -1,0 +1,11 @@
+digraph {
+
+S02->S02 [label="t", style="", color="blue"]
+S06->S06 [label="t", style="", color="blue"]
+S12->S12 [label="t", style="", color="blue"]
+S00->S09 [label="constructor", style="", color="blue"]
+S00->S12 [label="constructor", style="", color="blue"]
+S02->S02 [label="auctionEnd", style="", color="blue"]
+S07->S07 [label="t", style="", color="blue"]
+S06->S06 [label="auctionEnd", style="", color="blue"]
+}

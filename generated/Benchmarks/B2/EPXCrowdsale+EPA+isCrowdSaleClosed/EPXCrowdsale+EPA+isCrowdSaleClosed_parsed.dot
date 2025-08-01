@@ -1,0 +1,22 @@
+digraph {
+S00 [label="Init"]
+S23 [label="!constructor  & !setupCrowdsale\n & !buy & checkGoalReached\n & refund & t\n & e._isCrowdSaleClosed = True"]
+S44 [label="!constructor  & !setupCrowdsale\n & !buy & checkGoalReached\n & !refund & t\n & e._isCrowdSaleClosed = True"]
+S89 [label="!constructor  & !setupCrowdsale\n & buy & checkGoalReached\n & !refund & t\n & e._isCrowdSaleClosed = False"]
+S108 [label="!constructor  & !setupCrowdsale\n & !buy & checkGoalReached\n & !refund & t\n & e._isCrowdSaleClosed = False"]
+S113 [label="!constructor  & setupCrowdsale\n & !buy & !checkGoalReached\n & !refund & t\n & e._isCrowdSaleClosed = False"]
+
+S23->S23 [label="checkGoalReached\nrefund\nt", style="", color="black"]
+S89->S108 [label="buy\nt", style="", color="black"]
+S108->S23 [label="checkGoalReached", style="", color="black"]
+S113->S108 [label="setupCrowdsale", style="", color="black"]
+S108->S108 [label="checkGoalReached\nt", style="", color="black"]
+S23->S44 [label="refund", style="", color="black"]
+S108->S44 [label="checkGoalReached", style="", color="black"]
+S44->S44 [label="checkGoalReached\nt", style="", color="black"]
+S108->S89 [label="τ", style="dashed", color="black"]
+S113->S89 [label="setupCrowdsale", style="", color="black"]
+S00->S113 [label="constructor", style="", color="black"]
+S89->S89 [label="buy\ncheckGoalReached\nt", style="", color="black"]
+S113->S113 [label="τ", style="dashed", color="black"]
+}

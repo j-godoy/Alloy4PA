@@ -1,0 +1,6 @@
+digraph {
+
+S03->S05 [label="markAppraised", style="", color="blue"]
+S04->S06 [label="markAppraised", style="", color="blue"]
+S02->S02 [label="modifyOffer", style="", color="blue"]
+}

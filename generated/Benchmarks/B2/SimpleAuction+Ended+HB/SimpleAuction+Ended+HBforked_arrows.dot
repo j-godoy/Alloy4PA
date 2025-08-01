@@ -1,0 +1,27 @@
+digraph {
+
+
+
+S00->S01 [label="constructor", style="dotted", color="blue"]
+S02->S05 [label="auctionEnd", style="", color="black"]
+S02->S02 [label="bid\nwithdraw", style="", color="black"]
+S02->S03 [label="bid", style="", color="black"]
+S02->S02 [label="τ", style="dotted", color="blue"]
+S01->S04 [label="auctionEnd", style="", color="black"]
+S01->S01 [label="τ", style="dotted", color="blue"]
+S01->S02 [label="bid", style="", color="black"]
+S01->S03 [label="bid", style="", color="black"]
+S04->S04 [label="τ", style="dotted", color="blue"]
+S04->S05 [label="bid", style="", color="black"]
+S04->S06 [label="bid", style="", color="black"]
+S03->S06 [label="auctionEnd", style="", color="black"]
+S03->S03 [label="bid\nwithdraw", style="", color="black"]
+S03->S03 [label="τ", style="dotted", color="blue"]
+S03->S02 [label="bid", style="", color="black"]
+S06->S06 [label="bid\nwithdraw", style="", color="black"]
+S06->S05 [label="bid", style="", color="black"]
+S06->S06 [label="τ", style="dotted", color="blue"]
+S05->S05 [label="bid\nwithdraw", style="", color="black"]
+S05->S06 [label="bid", style="", color="black"]
+S05->S05 [label="τ", style="dotted", color="blue"]
+}

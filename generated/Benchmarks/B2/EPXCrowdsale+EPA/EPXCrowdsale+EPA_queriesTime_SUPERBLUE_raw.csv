@@ -1,0 +1,7 @@
+Transition, Time (secs), Satisfiable
+turquoise_transition__S25__a__S25_S44__mediante_met_t,2.588,false
+turquoise_transition__S44__a__S25_S44__mediante_met_t,15.068,false
+turquoise_transition__S23__a__S23_S44__mediante_met_refund,41.849,false
+turquoise_transition__S25__a__S25_S44__mediante_met_buy,5.829,true
+turquoise_transition__S44__a__S23_S44__mediante_met_checkGoalReached,8.1,false
+

@@ -1,0 +1,10 @@
+digraph {
+
+S76->S76 [label="t", style="", color="blue"]
+S76->S121 [label="startAuction", style="", color="blue"]
+S106->S106 [label="t", style="", color="blue"]
+S100->S100 [label="t", style="", color="blue"]
+S76->S76 [label="addToWhitelist", style="", color="blue"]
+S103->S103 [label="t", style="", color="blue"]
+S00->S76 [label="constructor", style="", color="blue"]
+}

@@ -1,0 +1,8 @@
+digraph {
+
+S00->S49 [label="constructor", style="", color="blue"]
+S49->S25 [label="setupCrowdsale", style="", color="blue"]
+S49->S44 [label="setupCrowdsale", style="", color="blue"]
+S25->S25 [label="checkGoalReached", style="", color="blue"]
+S49->S49 [label="t", style="", color="blue"]
+}

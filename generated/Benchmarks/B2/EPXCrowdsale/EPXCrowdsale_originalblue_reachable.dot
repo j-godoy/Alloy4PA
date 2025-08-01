@@ -1,0 +1,5 @@
+digraph {
+
+S00->S01 [label="constructor", style="", color="blue"]
+S01->S01 [label="t", style="", color="blue"]
+}

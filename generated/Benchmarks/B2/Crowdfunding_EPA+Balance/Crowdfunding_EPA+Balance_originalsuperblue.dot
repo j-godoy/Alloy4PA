@@ -1,0 +1,16 @@
+digraph {
+
+S20->S20 [label="t", style="", color="turquoise"]
+S20->S27 [label="t", style="", color="turquoise"]
+S18->S50 [label="getFunds", style="", color="turquoise"]
+S18->S59 [label="getFunds", style="", color="turquoise"]
+S52->S52 [label="t", style="", color="turquoise"]
+S52->S59 [label="t", style="", color="turquoise"]
+S27->S17 [label="t", style="", color="turquoise"]
+S27->S18 [label="t", style="", color="turquoise"]
+S27->S27 [label="t", style="", color="turquoise"]
+S17->S17 [label="claim", style="", color="turquoise"]
+S17->S59 [label="claim", style="", color="turquoise"]
+S59->S50 [label="t", style="", color="turquoise"]
+S59->S59 [label="t", style="", color="turquoise"]
+}

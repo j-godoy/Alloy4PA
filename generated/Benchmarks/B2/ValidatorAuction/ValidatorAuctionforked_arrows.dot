@@ -1,0 +1,18 @@
+digraph {
+
+
+
+S00->S01 [label="constructor", style="dotted", color="blue"]
+S02->S03 [label="bid\ncloseAuction", style="", color="black"]
+S02->S05 [label="closeAuction", style="", color="black"]
+S02->S02 [label="bid", style="", color="black"]
+S02->S02 [label="τ", style="dotted", color="blue"]
+S01->S02 [label="startAuction", style="dotted", color="blue"]
+S01->S01 [label="addToWhitelist\nt", style="dotted", color="blue"]
+S04->S04 [label="withdraw", style="", color="black"]
+S04->S04 [label="τ", style="dotted", color="blue"]
+S03->S04 [label="depositBids", style="", color="black"]
+S03->S03 [label="τ", style="dotted", color="blue"]
+S05->S05 [label="withdraw", style="", color="black"]
+S05->S05 [label="τ", style="dotted", color="blue"]
+}

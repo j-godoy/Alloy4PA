@@ -1,0 +1,20 @@
+digraph {
+
+S65->S65 [label="withdraw", style="", color="black"]
+S65->S100 [label="withdraw", style="", color="black"]
+S24->S24 [label="t", style="", color="blue"]
+S66->S66 [label="t", style="", color="blue"]
+S24->S66 [label="close", style="", color="turquoise"]
+S24->S100 [label="close", style="", color="turquoise"]
+S100->S100 [label="t", style="", color="blue"]
+S66->S100 [label="beneficiaryWithdraw", style="", color="blue"]
+S00->S24 [label="constructor", style="", color="black"]
+S100->S100 [label="transferPrimary", style="", color="blue"]
+S24->S65 [label="enableRefunds", style="", color="turquoise"]
+S24->S100 [label="enableRefunds", style="", color="turquoise"]
+S24->S24 [label="transferPrimary", style="", color="blue"]
+S65->S65 [label="transferPrimary", style="", color="blue"]
+S24->S24 [label="deposit", style="", color="blue"]
+S66->S66 [label="transferPrimary", style="", color="blue"]
+S65->S65 [label="t", style="", color="blue"]
+}

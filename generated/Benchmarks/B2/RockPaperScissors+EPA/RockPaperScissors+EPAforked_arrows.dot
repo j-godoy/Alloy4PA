@@ -1,0 +1,16 @@
+digraph {
+
+S00 [label="Init"]
+S04 [label="choicePlayer1 & choicePlayer2\n & !determineWinner"]
+S05 [label="!choicePlayer1 & !choicePlayer2\n & determineWinner"]
+S06 [label="!choicePlayer1 & choicePlayer2\n & !determineWinner"]
+S07 [label="choicePlayer1 & !choicePlayer2\n & !determineWinner"]
+
+
+S00->S04 [label="constructor", style="dotted", color="blue"]
+S04->S06 [label="choicePlayer1", style="dotted", color="blue"]
+S04->S07 [label="choicePlayer2", style="dotted", color="blue"]
+S06->S05 [label="choicePlayer2", style="dotted", color="blue"]
+S05->S05 [label="determineWinner", style="dotted", color="blue"]
+S07->S05 [label="choicePlayer1", style="dotted", color="blue"]
+}

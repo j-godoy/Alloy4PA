@@ -1,0 +1,16 @@
+digraph {
+
+
+
+S00->S01 [label="constructor", style="dotted", color="blue"]
+S02->S03 [label="uploadDocuments", style="dotted", color="blue"]
+S01->S02 [label="beginReviewProcess", style="dotted", color="blue"]
+S04->S06 [label="terminate", style="dotted", color="blue"]
+S04->S03 [label="rejectSharingRequest", style="dotted", color="blue"]
+S04->S05 [label="acceptSharingRequest", style="dotted", color="blue"]
+S03->S06 [label="terminate", style="dotted", color="blue"]
+S03->S05 [label="shareWithThirdParty", style="dotted", color="blue"]
+S03->S04 [label="requestLockerAccess", style="dotted", color="blue"]
+S05->S06 [label="terminate", style="dotted", color="blue"]
+S05->S03 [label="releaseLockerAccess\nrevokeAccessFromThirdParty", style="dotted", color="blue"]
+}

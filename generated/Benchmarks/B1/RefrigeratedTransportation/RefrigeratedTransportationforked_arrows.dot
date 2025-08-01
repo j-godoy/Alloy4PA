@@ -1,0 +1,17 @@
+digraph {
+
+
+S02_ingestTelemetry [label="", shape="point", color="blue"]
+S01_ingestTelemetry [label="", shape="point", color="blue"]
+
+S00->S01 [label="constructor", style="dotted", color="blue"]
+S02->S02_ingestTelemetry [label="ingestTelemetry", style="dotted", color="blue"]
+S02_ingestTelemetry->S02 [label="", style="dotted", color="blue"]
+S02_ingestTelemetry->S04 [label="", style="dotted", color="blue"]
+S02->S02 [label="transferResponsibility", style="dotted", color="blue"]
+S02->S03 [label="complete", style="dotted", color="blue"]
+S01->S01_ingestTelemetry [label="ingestTelemetry", style="dotted", color="blue"]
+S01_ingestTelemetry->S01 [label="", style="dotted", color="blue"]
+S01_ingestTelemetry->S04 [label="", style="dotted", color="blue"]
+S01->S02 [label="transferResponsibility", style="dotted", color="blue"]
+}

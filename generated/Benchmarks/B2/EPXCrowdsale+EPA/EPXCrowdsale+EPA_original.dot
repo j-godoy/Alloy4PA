@@ -1,0 +1,21 @@
+digraph {
+
+S00->S49 [label="constructor", style="", color="black"]
+S23->S23 [label="checkGoalReached", style="", color="black"]
+S23->S23 [label="refund", style="", color="black"]
+S23->S44 [label="refund", style="", color="black"]
+S23->S23 [label="t", style="", color="black"]
+S25->S25 [label="buy", style="", color="black"]
+S25->S44 [label="buy", style="", color="black"]
+S25->S25 [label="checkGoalReached", style="", color="black"]
+S25->S25 [label="t", style="", color="black"]
+S25->S44 [label="t", style="", color="black"]
+S44->S23 [label="checkGoalReached", style="", color="black"]
+S44->S44 [label="checkGoalReached", style="", color="black"]
+S44->S25 [label="t", style="", color="black"]
+S44->S44 [label="t", style="", color="black"]
+S49->S25 [label="setupCrowdsale", style="", color="black"]
+S49->S44 [label="setupCrowdsale", style="", color="black"]
+S49->S49 [label="t", style="", color="black"]
+S58->S58 [label="t", style="", color="black"]
+}

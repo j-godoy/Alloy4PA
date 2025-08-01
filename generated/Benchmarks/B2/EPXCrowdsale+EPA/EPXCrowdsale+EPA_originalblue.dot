@@ -1,0 +1,11 @@
+digraph {
+
+S49->S25 [label="setupCrowdsale", style="", color="blue"]
+S49->S44 [label="setupCrowdsale", style="", color="blue"]
+S25->S25 [label="checkGoalReached", style="", color="blue"]
+S58->S58 [label="t", style="", color="blue"]
+S23->S23 [label="checkGoalReached", style="", color="blue"]
+S23->S23 [label="t", style="", color="blue"]
+S00->S49 [label="constructor", style="", color="blue"]
+S49->S49 [label="t", style="", color="blue"]
+}

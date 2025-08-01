@@ -1,0 +1,7 @@
+Metric,CLASSIC
+total_queries,30
+max_time(secs),0.032
+min_time(secs),0.0
+avg_time(secs),0.013633333333333338
+total_time_outs,0
+total_time(secs),0.40900000000000014

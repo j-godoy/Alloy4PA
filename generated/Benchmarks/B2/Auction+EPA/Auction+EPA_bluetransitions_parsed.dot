@@ -1,0 +1,20 @@
+digraph {
+S00 [label="Init"]
+S04 [label="bid & withdraw\n & !auctionEnd & t\n"]
+S07 [label="!bid & withdraw\n & !auctionEnd & t\n"]
+S09 [label="bid & !withdraw\n & !auctionEnd & t\n"]
+S12 [label="!bid & !withdraw\n & !auctionEnd & t\n"]
+
+S04->S04 [label="bid\nt\nwithdraw", style="", color="black"]
+S09->S04 [label="bid", style="", color="black"]
+S00->S12 [label="constructor", style="", color="blue"]
+S04->S07 [label="τ", style="dashed", color="black"]
+S07->S07 [label="τ", style="dashed", color="blue"]
+S00->S09 [label="constructor", style="", color="blue"]
+S04->S09 [label="withdraw", style="", color="black"]
+S07->S07 [label="withdraw", style="", color="black"]
+S12->S12 [label="τ", style="dashed", color="blue"]
+S09->S12 [label="τ", style="dashed", color="black"]
+S09->S09 [label="bid\nt", style="", color="black"]
+S07->S12 [label="withdraw", style="", color="black"]
+}

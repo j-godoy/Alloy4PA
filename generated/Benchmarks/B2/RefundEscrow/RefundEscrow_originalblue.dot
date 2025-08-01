@@ -1,0 +1,12 @@
+digraph {
+
+S01->S01 [label="deposit", style="", color="blue"]
+S01->S01 [label="transferPrimary", style="", color="blue"]
+S02->S02 [label="transferPrimary", style="", color="blue"]
+S03->S03 [label="transferPrimary", style="", color="blue"]
+S03->S03 [label="t", style="", color="blue"]
+S01->S02 [label="enableRefunds", style="", color="blue"]
+S01->S01 [label="t", style="", color="blue"]
+S02->S02 [label="t", style="", color="blue"]
+S01->S03 [label="close", style="", color="blue"]
+}

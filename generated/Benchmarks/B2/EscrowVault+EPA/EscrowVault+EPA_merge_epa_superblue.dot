@@ -1,0 +1,20 @@
+digraph {
+
+S997->S997 [label="transferOwnership", style="", color="blue"]
+S499->S905 [label="enableRefunds", style="", color="blue"]
+S499->S499 [label="deposit", style="", color="blue"]
+S238->S238 [label="withdraw", style="", color="black"]
+S499->S499 [label="t", style="", color="blue"]
+S499->S238 [label="setGoalReached", style="", color="blue"]
+S905->S905 [label="t", style="", color="blue"]
+S905->S905 [label="transferOwnership", style="", color="blue"]
+S238->S997 [label="close", style="", color="blue"]
+S997->S997 [label="t", style="", color="blue"]
+S238->S238 [label="deposit", style="", color="blue"]
+S499->S499 [label="transferOwnership", style="", color="blue"]
+S238->S238 [label="t", style="", color="blue"]
+S238->S238 [label="withdrawAll", style="", color="blue"]
+S238->S238 [label="transferOwnership", style="", color="blue"]
+S905->S905 [label="refund", style="", color="blue"]
+S00->S499 [label="constructor", style="", color="blue"]
+}

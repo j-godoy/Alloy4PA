@@ -1,0 +1,8 @@
+digraph {
+
+
+
+S00->S01 [label="constructor", style="dotted", color="blue"]
+S02->S02 [label="setMode\nsetTargetTemperature", style="dotted", color="blue"]
+S01->S02 [label="startThermostat", style="dotted", color="blue"]
+}

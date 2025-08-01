@@ -1,0 +1,14 @@
+digraph {
+
+S66->S66 [label="t", style="", color="blue"]
+S121->S121 [label="t", style="", color="blue"]
+S24->S24 [label="transferPrimary", style="", color="blue"]
+S100->S100 [label="transferPrimary", style="", color="blue"]
+S66->S100 [label="beneficiaryWithdraw", style="", color="blue"]
+S65->S65 [label="transferPrimary", style="", color="blue"]
+S24->S24 [label="t", style="", color="blue"]
+S66->S66 [label="transferPrimary", style="", color="blue"]
+S24->S24 [label="deposit", style="", color="blue"]
+S100->S100 [label="t", style="", color="blue"]
+S65->S65 [label="t", style="", color="blue"]
+}

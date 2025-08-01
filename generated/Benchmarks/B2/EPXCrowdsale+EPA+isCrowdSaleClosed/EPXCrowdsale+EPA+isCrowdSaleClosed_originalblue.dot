@@ -1,0 +1,13 @@
+digraph {
+
+S113->S89 [label="setupCrowdsale", style="", color="blue"]
+S113->S108 [label="setupCrowdsale", style="", color="blue"]
+S44->S44 [label="checkGoalReached", style="", color="blue"]
+S23->S23 [label="t", style="", color="blue"]
+S89->S89 [label="checkGoalReached", style="", color="blue"]
+S00->S113 [label="constructor", style="", color="blue"]
+S23->S23 [label="checkGoalReached", style="", color="blue"]
+S122->S122 [label="t", style="", color="blue"]
+S113->S113 [label="t", style="", color="blue"]
+S44->S44 [label="t", style="", color="blue"]
+}

@@ -1,0 +1,7 @@
+Transition, Time (secs), Satisfiable
+turquoise_transition__S24__a__S66_S100__mediante_met_close,-1.0,false
+turquoise_transition__S24__a__S66_S100__mediante_met_close,600.007,false
+turquoise_transition__S65__a__S65_S100__mediante_met_withdraw,15.348,true
+turquoise_transition__S24__a__S65_S100__mediante_met_enableRefunds,-1.0,false
+turquoise_transition__S24__a__S65_S100__mediante_met_enableRefunds,600.0,false
+

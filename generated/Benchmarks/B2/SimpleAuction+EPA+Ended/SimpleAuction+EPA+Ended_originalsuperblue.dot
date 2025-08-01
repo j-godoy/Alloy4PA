@@ -1,0 +1,23 @@
+digraph {
+
+S07->S07 [label="withdraw", style="", color="turquoise"]
+S07->S12 [label="withdraw", style="", color="turquoise"]
+S25->S20 [label="bid", style="", color="turquoise"]
+S25->S25 [label="bid", style="", color="turquoise"]
+S19->S17 [label="bid", style="", color="turquoise"]
+S19->S19 [label="bid", style="", color="turquoise"]
+S20->S20 [label="withdraw", style="", color="turquoise"]
+S20->S25 [label="withdraw", style="", color="turquoise"]
+S17->S17 [label="withdraw", style="", color="turquoise"]
+S17->S19 [label="withdraw", style="", color="turquoise"]
+S20->S17 [label="t", style="", color="turquoise"]
+S20->S20 [label="t", style="", color="turquoise"]
+S04->S04 [label="withdraw", style="", color="turquoise"]
+S04->S09 [label="withdraw", style="", color="turquoise"]
+S09->S04 [label="bid", style="", color="turquoise"]
+S09->S09 [label="bid", style="", color="turquoise"]
+S18->S18 [label="withdraw", style="", color="turquoise"]
+S18->S22 [label="withdraw", style="", color="turquoise"]
+S25->S19 [label="t", style="", color="turquoise"]
+S25->S25 [label="t", style="", color="turquoise"]
+}

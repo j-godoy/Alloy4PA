@@ -1,0 +1,9 @@
+digraph {
+
+
+
+S00->S01 [label="constructor", style="dotted", color="blue"]
+S02->S01 [label="reject", style="dotted", color="blue"]
+S02->S03 [label="acceptOffer", style="dotted", color="blue"]
+S01->S02 [label="makeOffer", style="dotted", color="blue"]
+}

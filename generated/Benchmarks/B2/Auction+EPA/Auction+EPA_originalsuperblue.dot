@@ -1,0 +1,11 @@
+digraph {
+
+S09->S09 [label="t", style="", color="turquoise"]
+S09->S12 [label="t", style="", color="turquoise"]
+S04->S04 [label="withdraw", style="", color="turquoise"]
+S04->S09 [label="withdraw", style="", color="turquoise"]
+S04->S04 [label="t", style="", color="turquoise"]
+S04->S07 [label="t", style="", color="turquoise"]
+S07->S07 [label="withdraw", style="", color="turquoise"]
+S07->S12 [label="withdraw", style="", color="turquoise"]
+}

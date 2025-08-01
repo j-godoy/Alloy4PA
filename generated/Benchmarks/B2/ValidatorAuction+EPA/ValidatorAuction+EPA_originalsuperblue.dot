@@ -1,0 +1,16 @@
+digraph {
+
+S106->S100 [label="depositBids", style="", color="turquoise"]
+S106->S121 [label="depositBids", style="", color="turquoise"]
+S100->S100 [label="withdraw", style="", color="turquoise"]
+S100->S121 [label="withdraw", style="", color="turquoise"]
+S115->S103 [label="t", style="", color="turquoise"]
+S115->S115 [label="t", style="", color="turquoise"]
+S115->S121 [label="t", style="", color="turquoise"]
+S121->S103 [label="t", style="", color="turquoise"]
+S121->S115 [label="t", style="", color="turquoise"]
+S121->S121 [label="t", style="", color="turquoise"]
+S103->S100 [label="closeAuction", style="", color="turquoise"]
+S103->S106 [label="closeAuction", style="", color="turquoise"]
+S103->S121 [label="closeAuction", style="", color="turquoise"]
+}

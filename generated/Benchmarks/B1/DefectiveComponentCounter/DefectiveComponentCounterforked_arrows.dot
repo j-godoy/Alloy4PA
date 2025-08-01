@@ -1,0 +1,9 @@
+digraph {
+
+
+
+S00->S01 [label="constructor", style="dotted", color="blue"]
+S02->S02 [label="getDefectiveComponentsCount", style="dotted", color="blue"]
+S01->S01 [label="getDefectiveComponentsCount", style="dotted", color="blue"]
+S01->S02 [label="computeTotal", style="dotted", color="blue"]
+}

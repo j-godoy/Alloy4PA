@@ -1,0 +1,26 @@
+digraph {
+
+S00 [label="Init"]
+S24 [label="deposit & close\n & enableRefunds & !beneficiaryWithdraw\n & !withdraw & transferPrimary\n & t"]
+S65 [label="!deposit & !close\n & !enableRefunds & !beneficiaryWithdraw\n & withdraw & transferPrimary\n & t"]
+S66 [label="!deposit & !close\n & !enableRefunds & beneficiaryWithdraw\n & !withdraw & transferPrimary\n & t"]
+S100 [label="!deposit & !close\n & !enableRefunds & !beneficiaryWithdraw\n & !withdraw & transferPrimary\n & t"]
+
+S24_enableRefunds [label="", shape="point", color="blue"]
+S24_close [label="", shape="point", color="blue"]
+
+S66->S100 [label="beneficiaryWithdraw", style="dotted", color="blue"]
+S66->S66 [label="t\ntransferPrimary", style="dotted", color="blue"]
+S00->S24 [label="constructor", style="", color="black"]
+S65->S65 [label="t\ntransferPrimary", style="dotted", color="blue"]
+S65->S100 [label="withdraw", style="", color="black"]
+S65->S65 [label="withdraw", style="", color="black"]
+S24->S24_enableRefunds [label="enableRefunds", style="dotted", color="blue"]
+S24_enableRefunds->S65 [label="", style="dotted", color="blue"]
+S24_enableRefunds->S100 [label="", style="dotted", color="blue"]
+S24->S24_close [label="close", style="dotted", color="blue"]
+S24_close->S100 [label="", style="dotted", color="blue"]
+S24_close->S66 [label="", style="dotted", color="blue"]
+S24->S24 [label="deposit\nt\ntransferPrimary", style="dotted", color="blue"]
+S100->S100 [label="t\ntransferPrimary", style="dotted", color="blue"]
+}

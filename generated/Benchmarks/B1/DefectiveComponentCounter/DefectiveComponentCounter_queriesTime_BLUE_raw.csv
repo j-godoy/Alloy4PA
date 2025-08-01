@@ -1,0 +1,6 @@
+Transition, Time (secs), Satisfiable
+blue_transition__S00__a__S01__mediante_met_constructor,0.081,false
+blue_transition__S01__a__S02__mediante_met_computeTotal,0.077,false
+blue_transition__S01__a__S01__mediante_met_getDefectiveComponentsCount,0.023,false
+blue_transition__S02__a__S02__mediante_met_getDefectiveComponentsCount,0.031,false
+

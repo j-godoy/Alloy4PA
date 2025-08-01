@@ -1,0 +1,6 @@
+Transition, Time (secs), Satisfiable
+blue_transition__S01__a__S02__mediante_met_startThermostat,0.038,false
+blue_transition__S00__a__S01__mediante_met_constructor,0.336,false
+blue_transition__S02__a__S02__mediante_met_setTargetTemperature,0.105,false
+blue_transition__S02__a__S02__mediante_met_setMode,0.043,false
+

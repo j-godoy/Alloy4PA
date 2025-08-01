@@ -1,0 +1,15 @@
+digraph {
+
+S00->S01 [label="constructor", style="", color="black"]
+S01->S02 [label="choicePlayer1", style="", color="black"]
+S01->S03 [label="choicePlayer2", style="", color="black"]
+S02->S04 [label="choicePlayer2", style="", color="black"]
+S02->S05 [label="choicePlayer2", style="", color="black"]
+S02->S06 [label="choicePlayer2", style="", color="black"]
+S03->S04 [label="choicePlayer1", style="", color="black"]
+S03->S05 [label="choicePlayer1", style="", color="black"]
+S03->S06 [label="choicePlayer1", style="", color="black"]
+S04->S04 [label="determineWinner", style="", color="black"]
+S05->S05 [label="determineWinner", style="", color="black"]
+S06->S06 [label="determineWinner", style="", color="black"]
+}
