@@ -195,13 +195,56 @@ public class AlloyFuncs {
             //FIX: duplicated code
             LocalDateTime before = LocalDateTime.now();
             ExecutorService executor = Executors.newSingleThreadExecutor();
-            Callable<A4Solution> task = () -> TranslateAlloyToKodkod.execute_command(AlloyFuncs.rep(), world.getAllReachableSigs(), command, AlloyFuncs.options());
+//            Callable<A4Solution> task = () -> TranslateAlloyToKodkod.execute_command(AlloyFuncs.rep(), world.getAllReachableSigs(), command, AlloyFuncs.options());
+//            Future<A4Solution> future = executor.submit(task);
+//            Boolean rta;
+//            try {
+//                A4Solution ans = future.get(Config.QUERY_TIMEOUT_LIMIT_IN_SECS, TimeUnit.SECONDS);
+//                rta = ans.satisfiable();
+//            } catch (InterruptedException | ExecutionException e) {
+//                throw new RuntimeException(e);
+//            } catch (TimeoutException e) {
+//                rta = satisfiable;
+//                String query = namePredToRun.replaceAll("__", "_").replaceAll("_a_","_to_").replaceAll("_mediante_","_by_").replaceAll("_met_","_").trim();
+//                query = query.replace("superblue_transition","hypermust_transition");
+//                query = query.replace("blue_transition","must_transition");
+//                System.out.println("TO with pred " + query);
+//                QueryProcessor.syncList.add(new Triple<>(command.label, -1.0, rta));
+//            } finally {
+//                future.cancel(true);
+//                executor.shutdown();
+//            }
+
+            // Sometimes TranslateAlloyToKodkod.execute_command fails in runtime, but re-trying could execute normally
+            int maxRetries = 3;
+            Callable<A4Solution> task = () -> {
+                int attempt = 0;
+                while (true) {
+                    try {
+                        return TranslateAlloyToKodkod.execute_command(
+                                AlloyFuncs.rep(),
+                                world.getAllReachableSigs(),
+                                command,
+                                AlloyFuncs.options()
+                        );
+                    } catch (RuntimeException e) {
+                        attempt++;
+                        if (attempt >= maxRetries) {
+                            throw e; // no más intentos...
+                        }
+                        System.err.println("Attempt " + attempt + " failed, retrying...");
+                    }
+                }
+            };
+
             Future<A4Solution> future = executor.submit(task);
-            Boolean rta;
+            boolean rta;
+            String TO = "";
             try {
                 A4Solution ans = future.get(Config.QUERY_TIMEOUT_LIMIT_IN_SECS, TimeUnit.SECONDS);
                 rta = ans.satisfiable();
             } catch (InterruptedException | ExecutionException e) {
+                System.out.println(e.getMessage());
                 throw new RuntimeException(e);
             } catch (TimeoutException e) {
                 rta = satisfiable;
